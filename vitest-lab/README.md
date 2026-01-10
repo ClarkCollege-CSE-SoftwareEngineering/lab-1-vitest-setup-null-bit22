@@ -43,6 +43,22 @@ npm run test:coverage
 ### 4.3 Understand the Difference
 
 **Question:** The `strings.test.ts` file contains unit tests — they test individual functions in isolation. The `content.test.ts` file contains integration tests — they test how multiple units work together.
+
 **Answer:** This is a correct statement. I'm not sure what other context is wanted here.
 
-**Question:**
+**Question:** If the slugify function had a bug, which tests would fail? 
+
+**Answer:** Both the unit tests in strings.test.ts AND the integration tests in content.test.ts
+
+**Question:** What additional confidence do the integration tests give you that unit tests alone wouldn't provide?
+
+**Answer:** Integration tests give you the confidence that multiple parts are working together correctly. A passing unit test might still result in a project bug if individual functions/classes do not interact with each other correctly. 
+
+## 3. Additional Tests
+
+## 4. Testing Trophy Connection
+
+Starting with the bottom layer of the Trophy Model, the `tsconfig.json` has strict type checking for checking type errors in the code. Alongside with syntax highlighting in VScode, these all form the foundation for syntax and type checking in the static layer or base of the trophy. Unit tests is a small, yet it is the next foundational part of the trophy. Writing clear and concise unit tests allows you to spend more time and effort in the next layer which is the most important and largest section of the trophy model: Integration tests. Integration testing is the most important layer of the model as it test interactive funcitonality across the entire project, and provides a great balance between confidence and time/resources spent. End-to-end tests is the final part of the trophy model, and could be represented in this lab by the Github Actions which can repeatedly test the same things a user might interact with. 
+
+### Contributors
+Patrick Neill - CSE325: Software Design & Development
