@@ -24,6 +24,9 @@ describe('string utilities', () => {
     });
 
     // TODO: Add your own test case
+    it('handles an empty string', () => {
+      expect(slugify('')).toBe('');
+    });
   });
 
   describe('truncate', () => {
@@ -44,6 +47,9 @@ describe('string utilities', () => {
     });
 
     // TODO: Add your own test case
+    it('returns empty string for max length of 0', () => {
+      expect(truncate('Hello', 0, '')).toBe('');
+    });
   });
 
   describe('capitalize', () => {
@@ -60,6 +66,9 @@ describe('string utilities', () => {
     });
 
     // TODO: Add your own test case
+    it('handles input that is already correctly capitalized', () => {
+      expect(capitalize('Hello')).toBe('Hello');
+    });
   });
 
   describe('countWords', () => {
@@ -80,5 +89,8 @@ describe('string utilities', () => {
     });
 
     // TODO: Add your own test case
+    it('counts hyphenated words as one word', () => {
+      expect(countWords('I need to double-check the booby-trapped ice-skate rink tomorrow')).toBe(9);
+    });
   });
 });
