@@ -37,6 +37,7 @@ npm run test:coverage
 ### 2.3 Run the Tests
 
 **Question:** Look at the add tests. The first test uses explicit Arrange-Act-Assert comments. Why might this pattern be useful, especially for complex tests?
+
 **Answer:** Breaking down tests into the three parts of Arrange, Act, Assert makes it completely unambiguous which part of the test is doing what. It might be shorter to combine Arrange and Act into one line of code, but it becomes less clear that you are following proper testing principles. 
 
 ### 4.3 Understand the Difference
