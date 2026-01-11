@@ -2,6 +2,8 @@
 
 This repo is for demoing the basics of testing using Node and Vitest.
 
+Full assignment directions are below (After 'Contributors' section).
+
 ## 1. Setup Instructions
 
 Clone the repo locally:
