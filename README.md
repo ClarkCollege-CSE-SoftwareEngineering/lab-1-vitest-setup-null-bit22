@@ -4,37 +4,7 @@ This repo is for demoing the basics of testing using Node and Vitest.
 
 Full assignment directions are below (After 'Contributors' section).
 
-## 1. Setup Instructions
-
-Clone the repo locally:
-Change `<Your username>` to your own username on Github
-
-```bash
-git clone git@github.com:ClarkCollege-CSE-SoftwareEngineering/lab-1-vitest-setup-<Your username>.git
-```
-
-Initialize a node project: 
-
-```bash
-npm init -y
-```
-
-Install Vitest and other dependencies:
-```bash
-npm install -D typescript vitest @vitest/coverage-v8
-```
-
-Run the tests:
-```bash
-npm run test
-```
-
-To see a full breakdown of test coverage, run coverage tests:
-```bash
-npm run test:coverage
-```
-
-## 2. Reflection Questions and Answers
+## 1. Reflection Questions and Answers
 
 ### 2.3 Run the Tests
 
@@ -56,7 +26,7 @@ npm run test:coverage
 
 **Answer:** Integration tests give you the confidence that multiple parts are working together correctly. A passing unit test might still result in a project bug if individual functions/classes do not interact with each other correctly. 
 
-## 3. Additional Tests
+## 2. Additional Tests
 
 Four additional tests are listed below, underneath their respective functions
 
@@ -89,16 +59,14 @@ Four additional tests are listed below, underneath their respective functions
     });
 ```
 
-## 4. Testing Trophy Connection
+## 3. Testing Trophy Connection
 
 Starting with the bottom layer of the Trophy Model, the `tsconfig.json` has strict type checking for checking type errors in the code. Alongside with syntax highlighting in VScode, these all form the foundation for syntax and type checking in the static layer or base of the trophy. Unit tests is a small, yet it is the next foundational part of the trophy. Writing clear and concise unit tests allows you to spend more time and effort in the next layer which is the most important and largest section of the trophy model: Integration tests. Integration testing is the most important layer of the model as it test interactive funcitonality across the entire project, and provides a great balance between confidence and time/resources spent. End-to-end tests is the final part of the trophy model, and could be represented in this lab by the Github Actions which can repeatedly test the same things a user might interact with. 
 
 ### Contributors
 Patrick Neill - CSE325: Software Design & Development
 
-
 # Assignment Directions
-
 
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/TaS1d2WK)
 # Lab 1: Vitest Setup from Scratch
