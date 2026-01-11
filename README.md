@@ -44,13 +44,13 @@ npm run test:coverage
 
 ### 4.3 Understand the Difference
 
-**Question:** The `strings.test.ts` file contains unit tests — they test individual functions in isolation. The `content.test.ts` file contains integration tests — they test how multiple units work together.
+**Question:** Looking at `strings.test.ts` and `content.test.ts`, which file contains unit tests and which contains integration tests? How can you tell the difference? 
 
-**Answer:** This is a correct statement. I'm not sure what other context is wanted here.
+**Answer:** The `strings.test.ts` file contains unit tests — they test individual functions in isolation. The `content.test.ts` file contains integration tests — they test how multiple units work together.
 
-**Question:** If the slugify function had a bug, which tests would fail? 
+**Question:** If the slugify function had a bug, which tests would fail? Why does this happen?
 
-**Answer:** Both the unit tests in strings.test.ts AND the integration tests in content.test.ts
+**Answer:** Both the unit tests in strings.test.ts AND the integration tests in content.test.ts would fail. Both unit tests and integration tests rely on correct implementation of the slugify() function. If the function has a bug, all tests that rely on that function would fail. 
 
 **Question:** What additional confidence do the integration tests give you that unit tests alone wouldn't provide?
 
